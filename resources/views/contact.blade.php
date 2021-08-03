@@ -1,3 +1,3 @@
-<h1>Hello file</h1>
+<h1>Contact Page</h1>
 
 <a href='/'>Back</a> <br/>
