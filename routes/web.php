@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserInfo;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +21,13 @@ Route::get('/', function () {
 Route::get('/hello', function () {
     return view('hello');
 });
+
+Route::get('/dataFromController', [UserInfo::class, 'info'] ,function () {
+    return view('dataFromController');
+});
+
+// Route::get('/dataFromController', 
+// [UserInfo::class, 'info']);
 
 Route::get('/about', function () {
     return view('about');
