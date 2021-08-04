@@ -1,5 +1,7 @@
-<x-header/>
-
+<x-header data=" Header Component one"/>
+<x-header data=" Header Component two"/>
+<x-header data=" Header Component three"/>
+<br/>
 <h1>welcome file </h1>
 
 <a href='/redirect'>Redirect to about page</a><br/>
