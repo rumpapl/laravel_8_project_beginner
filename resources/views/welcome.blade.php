@@ -1,3 +1,5 @@
+<x-header/>
+
 <h1>welcome file </h1>
 
 <a href='/redirect'>Redirect to about page</a><br/>
