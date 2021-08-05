@@ -12,7 +12,7 @@
     <br/>
 
     <a href='/'>Back</a> <br/>
-
+    @csrf
     <script>
         var user=@json($data);
         console.warn(user);
