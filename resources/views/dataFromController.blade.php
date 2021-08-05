@@ -12,3 +12,10 @@
     <br/>
 
     <a href='/'>Back</a> <br/>
+
+    <script>
+        var user=@json($data);
+        console.warn(user);
+        console.warn(user.name);
+        console.warn(user.age);   
+    </script>
