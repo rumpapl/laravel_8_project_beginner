@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserInfo;
+use App\Http\Controllers\loginUser;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,3 +42,7 @@ Route::get('/redirect', function () {
     // return view('redirectpage');
     return redirect ('/about');
 });
+
+
+Route::post('/login',[loginUser::class, "loginUserData"]);
+Route::view('/login', 'login');

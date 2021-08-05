@@ -2,6 +2,9 @@
 <x-header data=" Header Component two"/>
 <x-header data=" Header Component three"/>
 <br/>
+
+<a href="/login">Login page</a>
+
 <h1>welcome file </h1>
 
 @include('innerView');
