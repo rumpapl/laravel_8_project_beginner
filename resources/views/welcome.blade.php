@@ -4,6 +4,8 @@
 <br/>
 <h1>welcome file </h1>
 
+@include('innerView');
+
 <a href='/redirect'>Redirect to about page</a><br/>
 <br/>
 <br/>
