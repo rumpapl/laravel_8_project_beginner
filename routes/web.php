@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserInfo;
 use App\Http\Controllers\loginUser;
-
+use App\Http\Controllers\userController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,7 +15,9 @@ use App\Http\Controllers\loginUser;
 |
 */
 
-Route::get('/', function () {
+Route::get("/", [userController::class, 'index']);
+
+Route::get('/welcome', function () {
     return view('welcome');
 });
 
@@ -46,3 +48,5 @@ Route::get('/redirect', function () {
 
 Route::post('/login',[loginUser::class, "loginUserData"]);
 Route::view('/login', 'login');
+
+
