@@ -1,4 +1,5 @@
 <h3>Users:</h3>
+<ul>
 @foreach($users_data as $data)
   <li>
       <br/>
@@ -11,3 +12,4 @@
     <br/>
     <br/>
 @endforeach
+</ul>

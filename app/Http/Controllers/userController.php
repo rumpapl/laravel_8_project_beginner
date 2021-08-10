@@ -2,16 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request; 
-use Illuminate\Support\Facades\DB;
+use Illuminate\Http\Request;
+use App\Models\User;
 
-class userController extends Controller
+class UserController extends Controller
 {
     //
-    public function index()
-        {
-        # code...
-         $users_data = DB::select('select * from users');
-         return view('users')->with('users_data',$users_data);
-        }
+    function getData()
+    {
+        $users_data = User:: all(); 
+
+        return view('users')->with('users_data', $users_data);
+}
 }

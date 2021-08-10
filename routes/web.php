@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserInfo;
 use App\Http\Controllers\loginUser;
-use App\Http\Controllers\userController;
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,7 +15,7 @@ use App\Http\Controllers\userController;
 |
 */
 
-Route::get("/", [userController::class, 'index']);
+Route::get("/", [UserController::class, 'getData']);
 
 Route::get('/welcome', function () {
     return view('welcome');
