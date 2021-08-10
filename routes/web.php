@@ -15,7 +15,7 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get("/", [UserController::class, 'getData']);
+Route::get("/", [UserController::class, 'getDataFromAPI']);
 
 Route::get('/welcome', function () {
     return view('welcome');
